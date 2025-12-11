@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media Tags Example</title>
+
+    <!-- INTERNAL CSS -->
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #333;
+        }
+
+        h2 {
+            color: #0077cc;
+            margin-top: 30px;
+        }
+
+        img, video, iframe, audio {
+            display: block;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            border-radius: 8px;
+        }
+
+        img {
+            border: 3px solid #444;
+        }
+
+        .media-box {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            margin-bottom: 25px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.1);
+        }
+
+        p {
+            color: #555;
+        }
+    </style>
+
+</head>
+<body>
+
+    <h1>Media Tags Example</h1>
+
+    <!-- IMAGE -->
+    <div class="media-box">
+        <h2>IMAGE</h2>
+        <img src="CAR.jpg" width="300" height="200" alt="Car Image">
+        <p>This is an image using the <code>&lt;img&gt;</code> tag.</p>
+    </div>
+
+    <!-- AUDIO -->
+    <div class="media-box">
+        <h2>AUDIO</h2>
+        <audio controls>
+            <source src="Believer.mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <p>This is an audio player using the <code>&lt;audio&gt;</code> tag.</p>
+    </div>
+
+    <!-- VIDEO -->
+    <div class="media-box">
+        <h2>VIDEO (Local File)</h2>
+        <video width="400" height="240" controls>
+            <source src="sample.mp4" type="video/mp4">
+        </video>
+        <p>This is a video player using the <code>&lt;video&gt;</code> tag.</p>
+    </div>
+
+    <!-- YOUTUBE VIDEO -->
+    <div class="media-box">
+        <h2>YOUTUBE VIDEO</h2>
+        <iframe width="560" height="315" 
+            src="https://www.youtube.com/embed/VO4ndeogLPQ?si=mX0tCUa5fre0ggDK"
+            title="YouTube video player"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
+    </div>
+
+</body>
+</html>
